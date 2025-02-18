@@ -34,4 +34,4 @@ use employees;
 
 -- O que quero, De onde?, Agrupar quem?
 select gender, count(gender) as qtd_por_genero from employees group by gender;
-select dept_no, count(dept_no) from dept_emp group by dept_no;
+select dept_no, count(dept_no) as func_por_dept from dept_emp group by dept_no;
